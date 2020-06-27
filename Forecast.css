@@ -1,0 +1,67 @@
+body{
+    font-family: 'Times New Roman', Times, sans-serif;
+}
+
+
+.container{    
+    display: flex;
+    width: 960px;
+    align-items: center;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    flex-shrink: 0;
+}
+
+.oneDay{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+    margin: 0px 2px;
+}
+
+.oneDay:hover{
+    box-shadow: 5px 5px 10px 0px rgba(153,153,153);
+}
+
+.oneDay p {
+    text-align: center;
+}
+
+.date{
+    background-color: #0097b9;
+    width: 100%;
+    font-size: 2em; 
+    color: white;
+}
+
+img{
+    width: 90%;
+    margin: auto;
+}
+
+.temperature{
+    font-size: 2.5em; 
+    
+
+}
+@media (min-width: 1025px){
+    .container{
+        width: 60vw;
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 1024px){
+    .container{
+        width: 100%;
+    }
+}
+
+
